@@ -4,7 +4,7 @@
   "description": "This year Typescript 💪💪",
   "main": "index.js",
   "scripts": {
-    "day": "node -r dotenv/config -r ts-node/register ./src/day03/solution.ts",
+    "day": "node -r dotenv/config -r ts-node/register ./src/day07/part2.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
