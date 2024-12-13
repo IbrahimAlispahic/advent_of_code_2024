@@ -19,7 +19,7 @@ const matrix = testInput
 console.log("matrix: ", matrix);
 
 
-function bfs(matrix, startRow, startCol) {
+function bfs(matrix: string | any[], startRow: number, startCol: number) {
   const directions = [
     [1, 0],
     [-1, 0],
@@ -32,7 +32,7 @@ function bfs(matrix, startRow, startCol) {
   let score = 0;
 
   while (queue.length > 0) {
-    const [row, col] = queue.shift();
+    const [row, col] = queue.shift()!;
 
     for (const [dx, dy] of directions) {
       const newRow = row + dx;

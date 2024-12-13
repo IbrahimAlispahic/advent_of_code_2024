@@ -60,10 +60,6 @@ function solveEquations(input: string[]) {
   }
 
   return a * 3 + b;
-
-  console.log(ax, ay);
-  console.log(bx, by);
-  console.log(px, py);
 }
 
 let tokens = 0;
