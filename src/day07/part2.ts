@@ -51,14 +51,13 @@ function canOperatorProduceValue(
     }
 
     if (result === testValue) {
-      // console.log("testValue: ", testValue);
-      // console.log("operators: ", operators);
-
       return true;
     }
   }
   return false;
 }
+
+console.time("Execution Time"); // Start the timer
 
 const rows = input.split("\n");
 let result = 0;
@@ -71,3 +70,4 @@ for (const row of rows) {
 }
 
 console.log("result: ", result);
+console.timeEnd("Execution Time"); // End the timer and print the elapsed time
